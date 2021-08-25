@@ -1,5 +1,5 @@
 /* освновной цвет текста #757575
-    вторичный цвет текста #000000
+    вторичный цвет текста #212121
     акцент #2196F3 
     белый #ffffff
     основной цвет фона #e5e5e5
@@ -7,7 +7,7 @@
     цвет фона героя #2f303a */
 :root {
   --primary-text-color: #757575;
-  --title-text-color: #000000;
+  --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-bg-color: #2f303a;
   --primary-white-color: #ffffff;
@@ -46,13 +46,14 @@ ul {
 .nav .current {
   color: var(--accent-color);
 }
-.nav-link {
-  color: var(--title-text-color);
-}
+
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
   text-decoration: none;
+}
+.nav-link {
+  color: var(--title-text-color);
 }
 .contacts-link-header {
   color: var(--primary-text-color);
@@ -181,4 +182,13 @@ footer {
 .projects-text {
   font-size: 16px;
   line-height: 1.87;
+}
+.projects-link:visited {
+  color: var(--title-text-color);
+}
+.projects-link-text {
+  text-decoration: none;
+}
+.projects-link-text:visited {
+  color: var(--primary-text-color);
 }
