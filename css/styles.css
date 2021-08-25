@@ -16,6 +16,7 @@
 body {
   background-color: #ffffff;
   color: var(--primary-text-color);
+  font-family: 'Roboto', sans-serif;
 }
 ul {
   list-style: none;
@@ -23,37 +24,57 @@ ul {
 
 .logo-header {
   color: var(--title-text-color);
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-style: bold;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo-web {
+  color: var(--accent-color);
 }
 
 /* Навигация сайта */
-.site-nav .link {
+.nav {
   color: var(--title-text-color);
+  font-size: 14px;
+  line-height: 1.14;
 }
-.site-nav .link.current {
+.link {
+  text-decoration: none;
+}
+.nav .current {
   color: var(--accent-color);
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--accent-color);
+  text-decoration: none;
 }
-.site-contacts .link {
+.contacts-link-header {
   color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
 }
-.site-contacts .link:hover,
-.site-contacts .link:focus {
+.contacts-link-footer {
+  color: var(--primary-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+}
+.contacts-link-header:hover,
+.contacts-link-header:focus,
+.contacts-link-footer:hover,
+.contacts-link-footer:focus {
   color: var(--accent-color);
 }
-/* Герой */
-.hero {
-  background-color: var(--primary-bg-color);
-}
-.hero-title {
+.contact-address {
   color: #ffffff;
+  font-size: 14px;
+  line-height: 1.71;
 }
-
-/* Особенности */
-.title {
-  color: var(--title-text-color);
+.contacts {
+  font-style: normal;
 }
 
 footer {
@@ -61,34 +82,100 @@ footer {
 }
 .logo-footer {
   color: #ffffff;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-style: bold;
+  font-size: 26px;
 }
-.address-site {
+
+/* Main */
+/* Герой */
+.hero {
+  background-color: var(--primary-bg-color);
+}
+.hero-title {
   color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  vertical-align: top;
+  text-transform: uppercase;
+}
+
+/* Особенности */
+.features-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.features-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
 }
 .button,
 .button button-hover:hover,
 .button button-hover:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  width: 200px;
-  height: 50px;
   padding: 10px 32px;
+  font-style: bold;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.pointer {
+  cursor: pointer;
 }
 
-/* CSS Portfolio */
+/* Чем мы занимаемся */
+/* Наша команда */
+.staff {
+  background-color: var(--secondary-bg-color);
+}
+.works-title,
+.staff-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.staff-names {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.staff-jobs {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
 
-.filter .link {
+/* Portfolio */
+/* Фильтр */
+.filter-link {
   color: var(--title-text-color);
   background-color: var(--secondary-bg-color);
-  width: 29px;
-  height: 26px;
-  padding: 6px 22px;
 }
-.filter .link:hover,
-.filter .link:focus {
+.filter-link:hover,
+.filter-link:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  width: 29px;
-  height: 26px;
-  padding: 6px 22px;
+}
+/* Проекты */
+.projects-link {
+  text-decoration: none;
+}
+.projects-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+.projects-text {
+  font-size: 16px;
+  line-height: 1.87;
 }
