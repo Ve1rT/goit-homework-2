@@ -46,6 +46,9 @@ ul {
 .nav .current {
   color: var(--accent-color);
 }
+.nav-link {
+  color: var(--title-text-color);
+}
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
